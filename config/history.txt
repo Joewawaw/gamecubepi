@@ -7,9 +7,7 @@ curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-q
 sudo apt install moonlight-qt
 moonlight-qt 
 curl -s https://install.zerotier.com | sudo bash
-sudo zerotier-cli join a09acf0233425afc
 sudo zerotier-cli status
-sudo zerotier-cli leave a09acf0233425afc
 sudo nano /boot/config.txt 
 sudo usermod -aG input keshav
 vcgencmd measure_temp 
