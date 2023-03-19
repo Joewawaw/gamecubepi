@@ -1,0 +1,11 @@
+[Unit]
+Description=Start X session
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/X :0
+Restart=always
+User=keshav
+
+[Install]
+WantedBy=multi-user.target

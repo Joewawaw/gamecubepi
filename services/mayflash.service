@@ -1,0 +1,17 @@
+# Template for geenric systemd service
+# File Location: /etc/systemd/system/<name>.service
+
+[Unit]
+Description=Mayflash Gamecube/WiiU Service
+#AssertPathExists=
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/keshav/wii-u-gc-adapter/wii-u-gc-adapter
+Restart=on-failure
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
