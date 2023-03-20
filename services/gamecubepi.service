@@ -1,4 +1,3 @@
-# Template for geenric systemd service
 # File Location: /etc/systemd/system/<name>.service
 
 [Unit]

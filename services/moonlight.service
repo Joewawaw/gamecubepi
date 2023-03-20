@@ -1,12 +1,14 @@
 [Unit]
-Description=Moonlight-Qt Persistent Service
+Description=Moonlight-Qt Service
 
 [Service]
 User=keshav
-Environment="DISPLAY=:0"
-ExecStart=/usr/bin/moonlight-qt -geometry 1920x1080
+Environment="QT_QUICK_CONTROLS_STYLE=Universal"
+Environment="QT_QUICK_CONTROLS_UNIVERSAL_ACCENT=Indigo"
+ExecStart=/usr/bin/moonlight-qt
 Restart=always
-RestartSec=3
+RestartSec=1
 
 [Install]
-WantedBy=default.target
+#WantedBy=multi-user.target
+WantedBy=network.target
