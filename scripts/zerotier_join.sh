@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo zerotier-cli join a09acf0233425afc
+sudo zerotier-cli join $NETWORK_ID
